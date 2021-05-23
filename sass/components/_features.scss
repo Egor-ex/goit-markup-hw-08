@@ -3,6 +3,8 @@
 }
 
 .features__svg {
+  display: flex;
+  justify-content: center;
   height: 120px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -18,8 +20,17 @@
   align-content: center;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+.features__item {
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .features__title {

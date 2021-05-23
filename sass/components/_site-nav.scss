@@ -1,3 +1,8 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -5,6 +10,14 @@
   & :focus,
   & :hover {
     color: var(--acent-color);
+  }
+
+  @media screen and (min-width: 60px) and (max-width: 767.9px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-left: 88px;
   }
 }
 

@@ -1,10 +1,28 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+
+  @media screen and (min-width: 60px) and (max-width: 767.9px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    display: block;
+    margin-left: 84px;
+  }
 }
 
-.auth-nav__item:not(:last-child) {
-  margin-right: 50px;
+.auth-nav__item {
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 .auth-nav__link {
   padding-top: 32px;
@@ -21,6 +39,13 @@
   &:focus {
     fill: var(--acent-color);
     color: var(--acent-color);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    display: flex;
+    padding: 0;
+
+    font-size: 12px;
   }
 }
 

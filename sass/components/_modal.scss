@@ -11,10 +11,10 @@
 }
 .modal {
   position: absolute;
-
+  padding: 40px;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100vh;
   height: 581px;
   border-radius: 4px;
 
@@ -48,4 +48,29 @@
   visibility: hidden;
   opacity: 0;
   transform: scale(0.9);
+}
+
+@media screen and (min-width: 60px) and (max-width: 479.9px) {
+  .modal {
+    width: 100%;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 609px;
+  }
 }
